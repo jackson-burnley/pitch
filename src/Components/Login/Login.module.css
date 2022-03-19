@@ -1,0 +1,90 @@
+.wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 100vh;
+  gap: 2rem;
+  animation: animeLeft 0.4s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: translateX(-20px);
+  }
+}
+
+.loginInfo {
+  padding: 1rem;
+  background-color: #1239b0;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+.loginTitle {
+  font-weight: 700;
+  font-size: 3rem;
+  margin-bottom: 40px;
+}
+
+.loginP {
+  font-weight: 500;
+  font-size: 2rem;
+  text-align: center;
+}
+
+/* FORM */
+
+.loginMain {
+  padding: 1rem;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.loginForm {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  border: 1px solid #eee;
+  display: block;
+  width: 100%;
+  font-size: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.4rem;
+  background: #eee;
+  transition: 0.2s;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+.input:hover,
+.input:focus {
+  outline: none;
+  border-color: #1239b0;
+  background: #fff;
+  box-shadow: 0 0 0 1px #3d5dbd;
+}
+
+.label {
+  display: block;
+  font-size: 1rem;
+  line-height: 1;
+  padding-bottom: 0.5rem;
+}
+
+.loginLost {
+  font-size: 1rem;
+  margin-top: 30px;
+}
+
+.loginLost .span {
+  font-weight: bold;
+  color: #1239b0;
+}
