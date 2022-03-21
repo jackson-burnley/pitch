@@ -1,0 +1,11 @@
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  animation: animeLeft 0.4s forwards;
+}
+
+@keyframes animeLeft {
+  to {
+    transform: translateX(-20px);
+  }
+}
